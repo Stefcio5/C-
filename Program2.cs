@@ -1,37 +1,44 @@
 ﻿using System;
 
-namespace ConsoleApp3
+namespace ConsoleApp2
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             trojkaPit();
-            //tabliczkaMnozenia();
+            tabliczkaMnozenia();
+            LiczbaPI();
+            ObjKuli();
+            pierwRownKwadratowego();
+            NiewiadomaX();
         }
-            static void trojkaPit() {
-                int a, b, c;
-                Console.WriteLine("Podaj 3 liczby:");
-                a = int.Parse(Console.ReadLine());
-                b = int.Parse(Console.ReadLine());
-                c = int.Parse(Console.ReadLine());
-                if (Math.Pow(a, 2) + Math.Pow(b, 2) == Math.Pow(c, 2)) {
-                    Console.WriteLine("Prawda");
+        static void trojkaPit()
+        {
+            int a, b, c;
+            Console.WriteLine("Podaj 3 liczby:");
+            a = int.Parse(Console.ReadLine());
+            b = int.Parse(Console.ReadLine());
+            c = int.Parse(Console.ReadLine());
+            if (Math.Pow(a, 2) + Math.Pow(b, 2) == Math.Pow(c, 2))
+            {
+                Console.WriteLine("Prawda");
 
-                }
-                else
-                {
-                    Console.WriteLine("Falsz");
-                }
             }
+            else
+            {
+                Console.WriteLine("Falsz");
+            }
+        }
 
         static void tabliczkaMnozenia()
         {
-            for(int i=1; i<=10; i++)
+            for (int i = 1; i <= 10; i++)
             {
                 Console.WriteLine(" ");
                 int j = 0;
-                for (j=1; j<=10; j++)
+                for (j = 1; j <= 10; j++)
                 {
                     Console.Write(" " + i * j + "");
                 }
@@ -50,7 +57,7 @@ namespace ConsoleApp3
             double r, V;
             Console.WriteLine("Podaj r: ");
             r = double.Parse(Console.ReadLine());
-            V = 4/3 * Math.PI * Math.Pow(r, 3);
+            V = 4 / 3 * Math.PI * Math.Pow(r, 3);
             Console.WriteLine("Obj kuli o promieniu " + r + " wynosi " + V);
         }
         static void pierwRownKwadratowego()
@@ -86,19 +93,23 @@ namespace ConsoleApp3
             double A2, B2, x2;
             Console.WriteLine("Podaj A i B rownania Ax=B");
             A2 = double.Parse(Console.ReadLine());
-            if(A2 == 0)
+            if (A2 == 0)
             {
                 Console.WriteLine("A wynosi 0. Podaj inna liczbe");
                 NiewiadomaX();
             }
-            
+
             B2 = double.Parse(Console.ReadLine());
 
             x2 = B2 / A2;
-            Console.WriteLine("Niewiadoma x wynosi " + x);
+            Console.WriteLine("Niewiadoma x wynosi " + x2);
+            Console.ReadKey();
 
         }
 
-        }
     }
+}
+
+
+
 

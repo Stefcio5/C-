@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
@@ -10,24 +6,31 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            /*
-             ObliczPole();
-             Console.WriteLine("Podaj dwie liczby");
-             double a = Double.Parse(Console.ReadLine());
-             double b = Double.Parse(Console.ReadLine());
-             Kalkulator(a,b);
-             
+            //ObliczPole();
 
-             
-            Console.WriteLine("Podaj dlugosc ciagu");
-            int ciag = int.Parse(Console.ReadLine());
-            Console.WriteLine(ciag + " wyraz ciagu Fibonnaciego wynosi " + Fibbonacci(ciag));
-            Console.ReadKey();
+            /*
+            Console.WriteLine("Podaj dwie liczby");
+            double a = Double.Parse(Console.ReadLine());
+            double b = Double.Parse(Console.ReadLine());
+            Kalkulator(a,b);
             */
+
+
+            /*
+           Console.WriteLine("Podaj dlugosc ciagu");
+           int ciag = int.Parse(Console.ReadLine());
+           Console.WriteLine(ciag + " wyraz ciagu Fibonnaciego wynosi " + Fibbonacci(ciag));
+           Console.ReadKey();
+           */
+
+            /*
             Console.WriteLine("Podaj ilosc liczb:");
             int silnia = int.Parse(Console.ReadLine());
             Console.WriteLine("Silnia " + silnia + " liczb wynosi " + Silnia(silnia));
             Console.ReadKey();
+            */
+
+            palindrome();
         }
 
         static void ObliczPole()
@@ -41,7 +44,7 @@ namespace ConsoleApp1
             pole = a * b;
             Console.WriteLine("Pole wynosi: " + pole);
             Console.ReadLine();
-            
+
         }
         static void Kalkulator(double a, double b)
         {
@@ -58,7 +61,7 @@ namespace ConsoleApp1
         }
         public static int Fibbonacci(int n)
         {
-            if(n == 0)
+            if (n == 0)
             {
                 return 0;
             }
@@ -70,7 +73,7 @@ namespace ConsoleApp1
             {
                 return Fibbonacci(n - 1) + Fibbonacci(n - 2);
             }
-            
+
         }
         public static int Silnia(int n)
         {
@@ -81,5 +84,26 @@ namespace ConsoleApp1
             }
             return suma;
         }
+        public static void palindrome()
+        {
+            string wyraz;
+            Console.WriteLine("Podaj wyraz");
+            wyraz = Console.ReadLine();
+            char[] charArr = wyraz.ToCharArray();
+            Array.Reverse(charArr);
+            Console.WriteLine(charArr);
+
+            if (wyraz.Equals(charArr))
+            {
+                Console.WriteLine("Wyraz " + wyraz + " jest palindromem");
+            }
+            else
+                Console.WriteLine("Wyraz " + wyraz + " NIE jest palindromem");
+            Console.ReadKey();
+
+
+        }
     }
 }
+
+
