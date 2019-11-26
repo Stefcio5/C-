@@ -1,0 +1,11 @@
+C:\Users\Stefcio\source\repos\ProgrCS\Lab5\bin\Debug\netcoreapp2.1\Lab5.deps.json
+C:\Users\Stefcio\source\repos\ProgrCS\Lab5\bin\Debug\netcoreapp2.1\Lab5.runtimeconfig.json
+C:\Users\Stefcio\source\repos\ProgrCS\Lab5\bin\Debug\netcoreapp2.1\Lab5.runtimeconfig.dev.json
+C:\Users\Stefcio\source\repos\ProgrCS\Lab5\bin\Debug\netcoreapp2.1\Lab5.dll
+C:\Users\Stefcio\source\repos\ProgrCS\Lab5\bin\Debug\netcoreapp2.1\Lab5.pdb
+C:\Users\Stefcio\source\repos\ProgrCS\Lab5\obj\Debug\netcoreapp2.1\Lab5.csprojAssemblyReference.cache
+C:\Users\Stefcio\source\repos\ProgrCS\Lab5\obj\Debug\netcoreapp2.1\Lab5.csproj.CoreCompileInputs.cache
+C:\Users\Stefcio\source\repos\ProgrCS\Lab5\obj\Debug\netcoreapp2.1\Lab5.AssemblyInfoInputs.cache
+C:\Users\Stefcio\source\repos\ProgrCS\Lab5\obj\Debug\netcoreapp2.1\Lab5.AssemblyInfo.cs
+C:\Users\Stefcio\source\repos\ProgrCS\Lab5\obj\Debug\netcoreapp2.1\Lab5.dll
+C:\Users\Stefcio\source\repos\ProgrCS\Lab5\obj\Debug\netcoreapp2.1\Lab5.pdb
